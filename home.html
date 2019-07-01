@@ -1,75 +1,513 @@
 <!DOCTYPE html>
 <html>
   <head>
-     <title></title>
+     <title>schoolpage</title>
+      <link rel="stylesheet" type="text/css" href="cssFile.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> -->
-
-  <link rel="stylesheet" type="text/css" href="cssFile.css">
-
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </head>
- <body> 
- 
-  <section >
-      <img src="images (1)/Banner-Home-page.jpg" width="100%">
-
-    <div>
-      <p class="homeimgtxt"><b>WHEN <span class="txtthey">THEY </span> GROW</p>
-      <p><span class="txtthey1">WE </span> <span class="growtxt">GROW!</span></b></p>
+<body>
+<!-- __________________________________NAVBAR HEADER_________________________________ -->
+  <div class="nheader ">
+    <div class="logo">
+        <img src="images (1)/logo.png">
     </div>
+    <div class="rightdiv">
+      <ul class="displayright">
+        <li>
+          <img src="images (1)/Email.png" class="mailimg">
+          <span class="mailtxt">abc@xyz.com</span>
+        </li>
+        <li>
+          <img src="images (1)/Contact-Us.png" class="contactimg">
+          <span class="contacttxt">+9123456789</span>
+        </li>
+        <form>
+          <input type="text" size="30" name="txtsearch" placeholder="Search..." class=".search-container search">
+          <img src="images (1)/search-icon.png" class="srcicon">
+        </form>
+        <button type="button" value="Log in" size="7" name="login" class="loginbtn">
+            Log in
+        </button>
+        <button type="button" value="Register" size="7" name="register" class="regbtn">
+            Register
+        </button>
+      </ul>
+    
+      <nav>
+<!--       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  -->
+      <ul class="navtxt">
+          <li>
+              <a href="#" class="navtxt1">HOME</a>
+          </li>
+          <li>
+              <a href="#" class="navtxt1">ABOUT</a>
+          </li>
+          <li>
+              <a href="#" class="navtxt1">NEWS</a>
+          </li>
+          <li>
+              <a href="#" class="navtxt1  dropdown-toggle" data-toggle="dropdown">SCHOOL</a>
+              <ul class="dropdown-menu drop">
+                <li><a href="#">ADMISSION</a></li>
+                <li><a href="#">TEACHER</a></li>
+                <li><a href="#">PARENT'S CORNER</a></li>
+                <li><a href="#">FEES STRUCTURE</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#" class="navtxt1">TEACHER</a>
+          </li>
+          <li>
+              <a href="#" class="navtxt1">PARENT'S CORNER</a>
+          </li>
+          <li>
+              <a href="" class="navtxt1">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+   <!-- _____________________________________HOME______________________________________ -->
+  <section class="bottomspace">
+    <img src="images (1)/Banner-Home-page.jpg" class="img">
+    
+    <div class="container">
+      <h1 class="homeimgtxt">WHEN <span class="txtthey">THEY </span> GROW
+        <span class="txtthey1">WE </span> <span class="growtxt">GROW!</span></h1>
+    </div>
     <div class="mainimgfooter">
-      <p class="pimgtxt">Have any query? <input type="text" size="90" class="homesrch"   name="txtsearch" placeholder="  Leave a message"> </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5 class="pimgtxt">Have any query? </h5>
+        </div>
+        <div class="col-md-6">
+          <input type="text" placeholder="Search.." name="search" class="homesrch">
+          <button type="submit" class="srch"><i class="fa fa-angle-right"></i></button>
+        </div>
+      </div>
+    </div>
     </div>
   </section>
 
-<!-- _________________________________________AboutUs________________________________ -->
+  <!-- _____________________________________AboutUs_____________________________________ -->
+  <section>
+    <div class="container ">
+      <div class="row align-item-center">
+        <h3 class="h3text">ABOUT US</h3>
+          <span class="ticon text-center">
+            <span class="titlewrappera"><img src="images (1)/title-icon.png"></span>
+          </span>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+           <img src="images (1)/Gallery-5.jpg"  class="tdimg">
+        </div>
+        <div class="col-md-6">
+          <img src="images (1)/Quote.png" class="quoteimg">
+            <p class="pquote">We believe that the secret in education lies in respecting the students.</p>
+          <p class="ppara">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia <!-- deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod --></p>
+        </div>
+      </div>
+    
+  </div>
+  </section>
 
-    <section >
-      <center ><p class="abtus"><b>ABOUT US</b></p></center>
-      <center><img src="images (1)/title-icon.png"><p class="titleimg"></p></center>
-    </section>
-
-    <section>
-    <div>
-    <table>
-    <tr>
-      <td><img src="images (1)/Gallery-5.jpg" height="450px" class="tdimg"></td>
-
-     
-      <td><img src="images (1)/Quote.png" class="quoteimg">
-        <p class="pquote"><b>We believe that the secret in education lies in respecting the students.</b></p>
-        <p class="ppara">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-<!--         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. --></p></td>
-        </tr>
-      </table>
+  <!-- ________________________________________OUR GROWTH___________________________________ -->
+  <section class="bottomspace">
+  <div class="bgcont">
+    <div class="container">
+      <div class="row align-item-center">
+        <h3 class="h3text test">OUR GROWTH</h3>
+            <span class="ticon text-center">
+              <span class="titlewrappero"><img src="images (1)/title-icon.png"></span>
+            </span>
+      </div>
+      <div class="row">
+      <div class="margindown">
+        <div class="col-md-4">
+          
+              <img src="images (1)/cup.png" class="cupdiv">
+            <div class="cuptxtdiv"><p class="cuptxtp">
+              <span class="cupspan">
+              30 </span>YEARS</p>
+              <p class="cup-p">
+              of inspired learning</p>
+            </div>
+          
+        </div>
+        <div class="col-md-4">
+          
+              <img src="images (1)/people.png" class="ppldiv">
+            <div class="ppltxtdiv"><p class="cuptxtp">
+              <span class="cupspan">
+              2000 </span>COMMUNITY</p>
+              <p class="cup-p">
+                of Teachers, Students and Staff
+              </p>
+            </div>
+          
+        </div>
+        <div class="col-md-4">
+          
+              <img src="images (1)/ratio.png" class="ratiodiv">
+            <div class="ratiotxtdiv"><p class="cuptxtp">
+              <span class="cupspan">
+              15:1 </span>RATIO</p>
+              <p class="cup-p">
+                of Students and Teachers
+              </p>
+            </div>
+          
+        </div>
+      </div>
+      </div>
+      <div class="row">
+      <div class="bottommargin">
+        <div class="col-md-4">
+          
+              <img src="images (1)/cap.png" class="capdiv">
+            <div class="captxtdiv"><p class="cuptxtp">
+              <span class="cupspan">
+                90% </span>
+                FACULTIES</p>
+              <p class="cup-p">
+                with Higher Degrees
+              </p>
+            </div>
+          
+        </div>
+        <div class="col-md-4">
+          
+              <img src="images (1)/college.png" class="clgdiv">
+            <div class="clgtxtdiv"><p class="cuptxtp">
+              <span class="cupspan">
+                12 </span>COLLEGES</p>
+              <p class="cup-p">
+               and Average ABC Student gets into
+              </p>
+            </div>
+          
+        </div>
+        <div class="col-md-4">
+          
+              <img src="images (1)/device.png" class="devicediv">
+            <div class="devicetxtdiv"><p class="cuptxtp">
+              <span class="cupspan">
+                500+ </span>DEVICES</p> 
+              <p class="cup-p">
+                with latest softwares installed
+               </p>
+            </div>
+          
+        </div>
+      </div>
     </div>
-    </section>
+      </div>
+    </div>
+  </section>
+  <!-- _______________________________________FACULTIES________________________________ -->
+  <section class="bottomspace">
+    <div class="container ">
+      <div class="row align-item-center">
+        <h3 class="h3text">FACULTIES</h3>
+            <span class="ticon text-center">
+              <span class="titlewrapperf"><img src="images (1)/title-icon.png"></span>
+            </span>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card1 crd1div">
+            <img src="images (1)/BLOG.png" alt="Avatar" class="crd1img">
+              <div class="faculties">
+                <h4 class="txtfac">JOHN DOE</h4> 
+                <h6 class="txtfac2">Architect & Engineer</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card1 crd1div">
+            <img src="images (1)/BLOG.png" alt="Avatar" class="crd1img">
+              <div class="faculties">
+                <h4 class="txtfac">JOHN DOE</h4> 
+                <h6 class="txtfac2">Architect & Engineer</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card1 crd1div">
+            <img src="images (1)/BLOG.png" alt="Avatar" class="crd1img">
+              <div class="faculties">
+                <h4 class="txtfac">JOHN DOE</h4> 
+                <h6 class="txtfac2">Architect & Engineer</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card1 crd1div">
+            <img src="images (1)/BLOG.png" alt="Avatar" class="crd1img">
+              <div class="faculties">
+                <h4 class="txtfac">JOHN DOE</h4> 
+                <h6 class="txtfac2">Architect & Engineer</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
- </body>
- </html>
+  <!-- ____________________________________NEWS_____________________________________ -->
+  <section class="bottomspace">
+    <div class="bg">
+      <div class="row align-item-center">
+      <h3 class="h3text test">NEWS</h3>
+        <span class="ticon text-center">
+          <span class="titlewrappern"><img src="images (1)/title-icon.png"></span>
+        </span>
+      </div>
+    </div>
+    <div class="container-fluid nbottom">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="imgnews1">
+            <img src="images (1)/Gallery-6.jpg" >
+            <div class="divimgnew1bar">
+              <p class="imgnews1bar">13 jAN `19</p>
+              <p class="imgnews1bartxt">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              <button class="imgnews1barbtn">Read more</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="imgnews2">
+            <img src="images (1)/Gallery-4.jpg" >
+            <div class="divimgnew1bar2">
+                <p class="imgnews1bar2">13 jAN `19</p>
+                <p class="imgnews1bartxt2">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+            </div>
+          </div>
+          <div class="imgnews3">
+            <img src="images (1)/Gallery-6.jpg" >
+            <div class="divimgnew1bar3">
+                <p class="imgnews1bar3">13 jAN `19</p>
+                <p class="imgnews1bartxt3">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ____________________________________BLOGS____________________________________ -->
+  <section class="bottomspace">
+    <div class="container">
+      <div class="row align-item-center">
+        <h3 class="h3text">BLOGS</h3>
+        <span class="ticon text-center">
+          <span class="titlewrapperb"><img src="images (1)/title-icon.png"></span>
+        </span>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card bcard1">
+            <img src="images (1)/BLOG.png" alt="Avatar" class="blogimg">
+              <div class="container5">
+                <h4 class="txtfac">Keshav Desai</h4> 
+                <p class="txtfac2">By Keshav Desai, Std.12th A </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore
+                </p>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bcard1">
+            <img src="images (1)/BLOG.png" alt="Avatar" class="blogimg">
+              <div class="container5">
+                <h4 class="txtfac">Keshav Desai</h4> 
+                <p class="txtfac2">By Keshav Desai, Std.12th A </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore
+                </p>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bcard1">
+            <img src="images (1)/BLOG.png" alt="Avatar" class="blogimg">
+              <div class="container5">
+                <h4 class="txtfac">Keshav Desai</h4> 
+                <p class="txtfac2">By Keshav Desai, Std.12th A </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore
+                </p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- _________________________________TESTIMONIALS________________________________ -->
+  <section class="bottomspace">
+    <div class="row align-item-center">
+      <h3 class="h3text">TESTIMONIALS</h3>
+        <span class="ticon text-center">
+          <span class="titlewrappert"><img src="images (1)/title-icon.png"></span>
+        </span>
+    </div>
+
+    <div class="wrapper-img">
+      <!-- <img src="images (1)/Contact.jpg"> -->
+    <div class="container">
+      <div class="row align-item-center">
+        <div class="col-md-4 testimg">
+            <img src="images (1)/Testimonial.png" >
+        </div>
+
+        <div class="col-md-8">
+            <div class="quoteimg"><img src="images (1)/Quote.png"></div>
+        <div class="testcontent">
+                  <h6 class="firsttxt">We believe that the secret in education lies in respecting the students.
+                  </h6>
+                  <p class="secondtxt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.  Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                  <h4 class="thirdtxt">Mr. Keshav Desai</h4>
+                  <p class="fourthtxt">Data Scientist</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <!-- ____________________________SUBSCRIBE____________________________________ -->
+  <section>
+    <img src="images (1)/subscribe-bg.png" class="subscribe">
+    
+      <div class="row">
+      <div class="col-md-8">
+        <form>
+          <input type="text" size="60" class="subsrch"   name="txtsearch" 
+          placeholder="  Email"><!-- class=".search-container" -->
+        </form>
+      </div>
+      <div class="col-md-4">
+        <form>
+          <input type="button" value="Subscribe Now" class="subbtn"  size="8" name="txtsearch" placeholder="Subscribe">
+        </form>
+      </div>
+      </div>
+   
+    <div>
+      <p class="subhr"></p>
+    </div>
+  </section>
+
+  <!-- ___________________________________FOOTER________________________________________ -->
+  <section>
+    <div class="  fbg"><!-- navbarfooter navbar-default -->
+      <div class="row wrapper1">
+        <div class="col-md-3">
+          <img src="images (1)/logo.png" class="flogo">
+          <h2 class="fh2txt">SCHOOL NAME</h2>
+        </div>
+        <div class="col-md-2">
+          <div class="fquickdiv">
+            <ul class="ul">
+              <li class="licolor">QUICK LINKS</li>
+              <li>HOME</li>
+              <li>NEWS</li>
+              <li>EVENTS</li>
+              <li>CONTACT US</li>
+            </ul>
+        </div>
+        </div>
+        <div class="col-md-2">
+          <div class="fquickdiv">
+            <ul class="ul">
+              <li class="licolor">USEFUL LINKS</li>
+              <li>ADMISSION</li>
+              <li>TEACHERS</li>
+              <li>EVENTS</li>
+              <li>PARENTS CORNER</li>
+            </ul>
+        </div>
+        </div>
+        <div class="col-md-2">
+          <div class="fquickdiv">
+            <ul class="ul">
+              <li class="licolor">CONTACT US</li>
+              <li><img src="images (1)/Our-Locatin.png" class="fcontact-img" >
+              <span class="contactalign">The Imperial School, <span class="paddingcontact">Nr. Royal Heights 1, </span><span class="paddingcontact">Bandra, Mumbai</span></span></li>
+              <li><img src="images (1)/Contact-Us.png" class="fcontact-img">
+              <span class="contactalign">+919123456789</span></li>
+              <li><img src="images (1)/Email.png" class="fcontact-img">
+              <span class="contactalign">imperial@edu.in </span></li>
+            </ul>
+        </div>
+        </div>
+        <div class="col-md-3">
+          <div class="fquickdiv">
+            <ul class="ul location">
+              <li class="licolor">CAMPUS LOCATION</li>
+              <li><img src="images (1)/Map-Footer.png"></li>
+            </ul>
+        </div>
+        </div>
+      </div>
+      <div class="row bgfollow">
+        <h5 class="ffollow">FOLLOW US NOW</h5>
+          <div class="col-md-12 followcenter">
+            <img src="images (1)/facebook-icon.png" class="ffollowimg">
+            <img src="images (1)/twitter-icon.png" class="ffollowimg">
+            <img src="images (1)/linkedin-icon.png" class="ffollowimg">
+            <img src="images (1)/google-plus.png" class="ffollowimg">
+          </div>
+      </div>
+      <div class="row cpr">
+        <h5 class="fcopytxt">Copyright @2018. All rights reserved</h5>  
+      </div>
+    </div>
+  </section>
+
+  </footer>
+</body>
+</html>
